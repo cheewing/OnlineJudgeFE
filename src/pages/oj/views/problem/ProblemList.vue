@@ -134,6 +134,7 @@
           },
           {
             title: 'Level',
+            width: 80,
             render: (h, params) => {
               let t = params.row.difficulty
               let color = 'blue'
@@ -148,10 +149,12 @@
           },
           {
             title: 'Total',
+            width: 80,
             key: 'submission_number'
           },
           {
             title: 'AC Rate',
+            width: 80,
             render: (h, params) => {
               return h('span', this.getACRate(params.row.accepted_number, params.row.submission_number))
             }
